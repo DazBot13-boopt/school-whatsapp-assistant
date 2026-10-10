@@ -8,6 +8,11 @@ Le projet sera connecté à Baileys, mais restera séparé du bot personnel
 communication aux parents ne sera envoyée sans confirmation explicite d'un
 utilisateur autorisé.
 
+## Architecture
+
+Le fonctionnement est décrit dans [`ARCHITECTURE.md`](ARCHITECTURE.md), avec
+un diagramme général et le déroulement d'une demande jusqu'à la validation.
+
 ## État
 
 Le cadrage fonctionnel et technique est disponible dans
