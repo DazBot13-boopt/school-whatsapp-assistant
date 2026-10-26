@@ -1,0 +1,48 @@
+{
+  "_lisez_moi": "Copiez ce fichier en access.json et remplissez-le. access.json est ignoré par git : les numéros et les droits réels ne doivent jamais être publiés.",
+
+  "roles": {
+    "direction": {
+      "libelle": "Direction",
+      "corriger": true,
+      "redigerBrouillon": true,
+      "valider": true,
+      "envoyer": true
+    },
+    "secretariat": {
+      "libelle": "Secrétariat",
+      "corriger": true,
+      "redigerBrouillon": true,
+      "valider": true,
+      "envoyer": false
+    }
+  },
+
+  "utilisateurs": [
+    {
+      "numero": "+229XXXXXXXX",
+      "nom": "Exemple — directrice",
+      "role": "direction",
+      "actif": true
+    },
+    {
+      "numero": "+229YYYYYYYY",
+      "nom": "Exemple — secrétaire",
+      "role": "secretariat",
+      "actif": true
+    }
+  ],
+
+  "groupesAutorises": [
+    {
+      "id": "000000000000000000@g.us",
+      "libelle": "Exemple — Parents 6e",
+      "envoiAutorise": false
+    }
+  ],
+
+  "refusDiscret": {
+    "repondre": false,
+    "journaliser": true
+  }
+}

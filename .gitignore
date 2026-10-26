@@ -1,0 +1,9 @@
+# Base éditoriale réelle : numéros, droits, modèles et informations de l'école.
+# Seuls les fichiers *.example.json sont publics.
+school-assistant/access.json
+school-assistant/knowledge.json
+school-assistant/templates.json
+
+node_modules/
+.env
+*.log

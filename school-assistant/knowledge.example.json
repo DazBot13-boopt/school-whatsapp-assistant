@@ -1,0 +1,44 @@
+{
+  "_lisez_moi": "Copiez ce fichier en knowledge.json. Il contient les informations stables de l'école : ce que l'assistant a le droit d'affirmer sans le demander.",
+
+  "etablissement": {
+    "nom": "",
+    "sigle": "",
+    "ville": "",
+    "telephone": "",
+    "email": ""
+  },
+
+  "anneeScolaire": {
+    "libelle": "2026-2027",
+    "debut": "",
+    "fin": ""
+  },
+
+  "classes": ["6e", "5e", "4e", "3e", "2nde", "1ere", "Tle"],
+
+  "vocabulaire": [
+    {
+      "aEviter": "les enfants",
+      "aUtiliser": "les élèves",
+      "raison": "Registre officiel attendu dans les communications de l'école."
+    },
+    {
+      "aEviter": "école",
+      "aUtiliser": "établissement",
+      "raison": "Exemple — à remplacer par vos propres conventions."
+    }
+  ],
+
+  "formules": {
+    "ouverture": ["Chers parents,", "Chers parents d'élèves,"],
+    "cloture": ["La Direction", "Le Secrétariat"]
+  },
+
+  "interdits": [
+    "Annoncer une décision de la direction qui n'a pas été fournie dans la demande.",
+    "Inventer une date, une heure, un montant, un nom ou une classe.",
+    "Compléter une information manquante par une valeur plausible.",
+    "Modifier un montant, une date ou un nom fourni par l'utilisateur."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "_lisez_moi": "Copiez ce fichier en templates.json. Chaque modèle doit être relu et approuvé par la direction avant usage. Les champs entre {{ }} sont obligatoires : le brouillon est refusé tant qu'il en manque un.",
+
+  "version": 1,
+
+  "modeles": [
+    {
+      "id": "absence-enseignant",
+      "libelle": "Absence d'un enseignant",
+      "variables": [
+        { "nom": "classe", "type": "texte", "obligatoire": true, "exemple": "6e B" },
+        { "nom": "matiere", "type": "texte", "obligatoire": true, "exemple": "Mathématiques" },
+        { "nom": "date", "type": "date", "obligatoire": true, "exemple": "2026-11-04" }
+      ],
+      "corps": "Chers parents,\n\nLe cours de {{matiere}} de la classe de {{classe}} prévu le {{date}} n'aura pas lieu. Les élèves concernés sont invités à rejoindre la permanence.\n\nLa Direction",
+      "approuvePar": "",
+      "approuveLe": ""
+    },
+    {
+      "id": "convocation-reunion",
+      "libelle": "Convocation à une réunion de parents",
+      "variables": [
+        { "nom": "classe", "type": "texte", "obligatoire": true, "exemple": "3e A" },
+        { "nom": "date", "type": "date", "obligatoire": true, "exemple": "2026-11-09" },
+        { "nom": "heure", "type": "heure", "obligatoire": true, "exemple": "09h00" },
+        { "nom": "lieu", "type": "texte", "obligatoire": true, "exemple": "Salle polyvalente" },
+        { "nom": "objet", "type": "texte", "obligatoire": true, "exemple": "Bilan du premier trimestre" }
+      ],
+      "corps": "Chers parents,\n\nVous êtes conviés à une réunion concernant la classe de {{classe}}, le {{date}} à {{heure}}, {{lieu}}.\n\nObjet : {{objet}}.\n\nVotre présence est vivement souhaitée.\n\nLa Direction",
+      "approuvePar": "",
+      "approuveLe": ""
+    },
+    {
+      "id": "rappel-scolarite",
+      "libelle": "Rappel de frais de scolarité",
+      "variables": [
+        { "nom": "montant", "type": "montant", "obligatoire": true, "exemple": "25 000 FCFA" },
+        { "nom": "echeance", "type": "date", "obligatoire": true, "exemple": "2026-11-30" }
+      ],
+      "corps": "Chers parents,\n\nNous vous rappelons que le solde de {{montant}} est attendu au plus tard le {{echeance}}.\n\nLe Secrétariat",
+      "approuvePar": "",
+      "approuveLe": ""
+    }
+  ]
+}
